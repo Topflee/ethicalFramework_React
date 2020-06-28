@@ -9,7 +9,7 @@ const SurveyPage = () => {
     return (
         <Layout>
             <Survey />
-            <LikertScale />
+            {/* <LikertScale /> */}
         </Layout>
     )
 }
