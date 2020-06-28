@@ -2,10 +2,11 @@ import React from 'react'
 import { Link } from "gatsby"
 import Layout from '../components/layout'
 // import SEO from "../components/seo"
+import "../styles/Debrief.css"
 
 const Debrief = () => {
     return (
-        <div>
+        <div className="Debrief">
             <Layout >
                 {/* <SEO title="Debrief" /> */}
                 <h1>

@@ -14,9 +14,23 @@ let count = 0;
 export default class Survey extends Component {
         // TODO: Render different options/question based on props
         state = {
-            quote: "",
-            option_uno: "",
-            option_dos: "",
+            quote: "Welcome to the TRACE Lab Ethical Frameworks Study! \n \
+                    Here you will be presented with a Ethical Dilemma and you will be asked to choose the option you most agree with.\n  \
+                    At the end of the study, you will see a button labeled 'End Session' please click that and read the debriefing form to finish particiating in this study.\n \
+                    Thank you for participating!",
+            likertOptions: {
+                question: "Choose your preferred option",
+                responses: [
+                    { value: 1, text: "Option 1" },
+                    { value: 2, text: "Lean Left" },
+                    { value: 3, text: "Indifferent" },
+                    { value: 4, text: "Lean Right" },
+                    { value: 5, text: "Option 2" },
+                ],
+                picked: val => {
+                    console.log(val)
+                },
+            }
         }
         handleClick = () => {
             if (count < 7) {
@@ -41,39 +55,31 @@ export default class Survey extends Component {
                 rando = Math.floor(Math.random() * 7)
             } while (qtracker[rando] == true)
 
-            // console.log(rando)
-            // console.log(qtracker[rando])
             qtracker[rando] = true
-            // console.log(qtracker[rando])
 
-            // console.log(data.QuestionBank.Question[rando].$["id"])
-            // console.log(
-            //     data.QuestionBank.Question[rando].QuestionContent[0]
-            // )
             this.setState({
                 quote:
                 data.QuestionBank.Question[rando].QuestionContent[0],
-                option_uno: data.QuestionBank.Question[rando].OptionContent[0]._,
-                option_dos: data.QuestionBank.Question[rando].OptionContent[1]._
-            })
-            console.log(this.state.option_uno)
-            console.log(this.state.option_dos)
-        }
+                // option_uno: data.QuestionBank.Question[rando].OptionContent[0]._,
+                // option_dos: data.QuestionBank.Question[rando].OptionContent[1]._
 
-        // Creates Likert Scale
-        likertOptions = {
-            // question: "What is your opinion of the President’s performance?",
-            responses: [
-                { value: 1, text: this.state.option_uno },
-                { value: 2, text: "" },
-                { value: 3, text: "Indifferent" },
-                { value: 4, text: "" },
-                { value: 5, text: this.state.option_dos },
-            ],
-            picked: val => {
-                console.log(val)
-            },
+                likertOptions: {
+                    question: "Choose your preferred option",
+                    responses: [
+                        { value: 1, text: data.QuestionBank.Question[rando].OptionContent[0]._ },
+                        { value: 2, text: "Lean Left" },
+                        { value: 3, text: "Indifferent" },
+                        { value: 4, text: "Lean Right" },
+                        { value: 5, text: data.QuestionBank.Question[rando].OptionContent[1]._ },
+                    ],
+                    picked: val => {
+                        console.log(val)
+                    },
+                }
+
+            })
         }
+        
 
         render() {
             return (
@@ -81,11 +87,11 @@ export default class Survey extends Component {
                 <div id="questionbox">
                     <p>{this.state.quote}</p>
                     <br />
-                    {/* <Likert {...this.likertOptions} /> */}
+                    <Likert {...this.state.likertOptions} />
+                    <br />
                     <button id="clickme" onClick={this.handleClick}>
-                    Next Questions?
+                    Submit
                     </button>
-                    <Likert {...this.likertOptions} />
                 </div>
                 <div id="thankyoubox" style={{ display: "none" }}>
                     Thank you for participating!!

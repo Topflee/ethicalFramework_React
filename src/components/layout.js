@@ -33,12 +33,16 @@ const Layout = ({ children }) => {
           padding: `0 1.0875rem 1.45rem`,
         }}
       >
-        <main>{children}</main>
+        <div style={{position: `relative`, minHeight: `85vh`,}}>
+          <div style={{ paddingBottom: `2.5rem`}}>
+            <main>{children}</main>
+          </div>
         <footer>
           © {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
         </footer>
+        </div>
       </div>
     </>
   )
