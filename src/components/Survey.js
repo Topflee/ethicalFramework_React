@@ -7,6 +7,7 @@ import Likert from "react-likert-scale";
 // import XMLParser from 'react-xml-parser'
 
 import LikertScale from "./LikertScale"
+import './Survey.css'
 
 const qtracker = [false, false, false, false, false, false, false];
 let count = 0;
@@ -15,17 +16,16 @@ export default class Survey extends Component {
         // TODO: Render different options/question based on props
         state = {
             quote: "Welcome to the TRACE Lab Ethical Frameworks Study! \n \
-                    Here you will be presented with a Ethical Dilemma and you will be asked to choose the option you most agree with.\n  \
-                    At the end of the study, you will see a button labeled 'End Session' please click that and read the debriefing form to finish particiating in this study.\n \
-                    Thank you for participating!",
+                    In this study you will be presented with a Ethical Dilemma and asked to choose an option on the likert scale that you most agree with.\
+                    At the end of the study, you will see a button labeled 'End Session' please click that and read the debriefing form to finish particiating in this study.",
             likertOptions: {
                 question: "Choose your preferred option",
                 responses: [
-                    { value: 1, text: "Option 1" },
-                    { value: 2, text: "Lean Left" },
+                    { value: 1, text: "Strongly agree with Option 1" },
+                    { value: 2, text: "Leaning toward Option 1" },
                     { value: 3, text: "Indifferent" },
-                    { value: 4, text: "Lean Right" },
-                    { value: 5, text: "Option 2" },
+                    { value: 4, text: "Leaning toward Option 2" },
+                    { value: 5, text: "Strongly agree with Option 2" },
                 ],
                 picked: val => {
                     console.log(val)
@@ -76,7 +76,6 @@ export default class Survey extends Component {
                         console.log(val)
                     },
                 }
-
             })
         }
         
@@ -95,7 +94,9 @@ export default class Survey extends Component {
                 </div>
                 <div id="thankyoubox" style={{ display: "none" }}>
                     Thank you for participating!!
-                    <Link to="/Debrief">End Session</Link>
+                    <br />
+                    <br />
+                    <Link to="/Debrief" className="debrief-button">End Session</Link>
                 </div>
                 </div>
             )

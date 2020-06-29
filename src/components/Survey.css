@@ -1,0 +1,13 @@
+.debrief-button {
+    position: absolute;
+    background: #bebebe;
+    margin-left: -5vh;
+    padding: 5px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.debrief-button:hover {
+    background-color: #a9a9a9;
+    /* color: #bebebe; */
+}

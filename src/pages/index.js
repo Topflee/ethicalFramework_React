@@ -11,7 +11,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <Login/>
-    <br />
+    {/* <br /> */}
   </Layout>
 )
 
