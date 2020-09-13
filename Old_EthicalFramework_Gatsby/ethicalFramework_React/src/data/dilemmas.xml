@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-stylesheet type="text/xsl" href="ACSPIXMT.xsl" ?>
+
+<QuestionBank>
+    <Question id='0'>
+        <QuestionContent>
+            You are in your autonomous vehicle approaching a intersection with a crosswalk where [X] pedestrians are walking and a sidewalk to your right, with [Y] pedestrians. 
+            The pedestrian(s) in the crosswalk are [relatedness,age, etc.]. The pedestrian(s) on the sidewalk are [relatedness, age, etc.]. 
+            In approaching the intersection, your brakes fail, you cannot slow down, and your autonomous vehicle must choose one of the following two options. 
+            What should your autonomous vehicle be programmed to do?
+        </QuestionContent>
+
+        <OptionContent id='0'> 
+            Continue driving forward, killing [X] pedestrians in the crosswalk
+        </OptionContent>
+        <OptionContent id='1'> 
+            Swerve to the right, killing [Y] pedestrians on the sidewalk.
+        </OptionContent>
+    </Question>
+
+    <Question id='1'>
+        <QuestionContent>
+            You have the choice to donate a kidney to a person who has a [X]% chance of dying without a kidney transplant. 
+            The person in need is [relatedness, age, etc.]. You have a [Y]% chance of dying in surgery, but otherwise you will suffer little to no negative side effects from the transplant, as your remaining kidney will enlarge to replace the functioning of the one that was removed. 
+            What should you do?
+        </QuestionContent>
+
+        <OptionContent id='0'> 
+            Donate your kidney
+        </OptionContent>
+        <OptionContent id='1'> 
+            Don't donate your kidney
+        </OptionContent>
+    </Question>
+
+    <Question id='2'>
+        <QuestionContent>
+            You live in a war-torn region ravaged by famine and scarcity. [People: relatedness, age, etc.] are starving and need food to survive. 
+            There is a [Source of food] which you can steal from with a [X%] chance of getting caught. If you do not steal, [P] will die of starvation in a week. 
+            If you do steal, you will feed [P] for about [Y] days. What should you do?
+        </QuestionContent>
+
+        <OptionContent id='0'> 
+            Steal
+        </OptionContent>
+        <OptionContent id='1'> 
+            Don't steal
+        </OptionContent>
+    </Question>
+
+    <Question id='3'>
+        <QuestionContent>
+            [Person: relatedness, age, etc.] is suffering from [Medical condition] that requires [Medical supplies/bills]. 
+            There is a [Source of bill, supplies, etc.] which you can steal the [money, supplies, etc.] from with a [X%] chance of getting caught. 
+            [P] has a [X%] chance of [Medical outcome: death, pain, etc.] if you do not steal. What should you do?
+        </QuestionContent>
+
+        <OptionContent id='0'> 
+            Steal
+        </OptionContent>
+        <OptionContent id='1'> 
+            Don't Steal
+        </OptionContent>
+    </Question>
+
+    <Question id='4'>
+        <QuestionContent>
+            You receive [Gift: monetary value, etc.] from [Person: relatedness, age, etc.] which you do not like. 
+            [P] really hopes you like it and would be very sad if you told them the truth. 
+            If you tell the truth, they will return [Gift] and give you the refund, but will be offended and hurt for some time. 
+            If you lie, you will keep [Gift] and will never use it, but will have to pretend to like it when asked about it by [P]. 
+            What should you do?
+        </QuestionContent>
+
+        <OptionContent id='0'> 
+            Tell the truth
+        </OptionContent>
+        <OptionContent id='1'> 
+            Lie
+        </OptionContent>
+    </Question>
+
+    <Question id='5'>
+        <QuestionContent>
+            You are in a hostage situation in which you and two others have been kidnapped. 
+            Your captor gives you a choice: you have to kill one of the other hostages yourself by [Method of murder: shooting, stabbing, suffocation, etc.] or he will kill both of the other hostages himself by [Method]. 
+            The other two hostages are [age, relatedness, etc.]. What should you do?
+        </QuestionContent>
+
+        <OptionContent id='0'> 
+            Kill the one
+        </OptionContent>
+        <OptionContent id='1'> 
+            Let your captor kill two
+        </OptionContent>
+    </Question>
+
+    <Question id='6'>
+        <QuestionContent>
+            While walking on the sidewalk at [Time of day] in [Place] you are pickpocketed. The pickpocket has taken your [Item] and is running away from you. 
+            You are physically capable of chasing the pickpocket down, tackling him, and recovering your [Item] with a [X%] of causing [Harm] to the pickpocket. 
+            You have a [Y%] chance of remaining unharmed from the tustle. Afterwards, the pickpocket will run away. Alternatively, you can do nothing and instead call the police, with a [Z%] chance of recovering your [Item]. 
+            What should you do?
+        </QuestionContent>
+
+        <OptionContent id='0'> 
+            Chase down and tackle the pickpocket
+        </OptionContent>
+        <OptionContent id='1'> 
+            Do nothing and call the police
+        </OptionContent>
+    </Question>
+
+
+</QuestionBank>

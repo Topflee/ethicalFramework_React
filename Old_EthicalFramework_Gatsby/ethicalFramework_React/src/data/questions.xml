@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='utf-8'?>
+<?xml-stylesheet type="text/xsl" href="ACSPIXMT.xsl" ?>
+
+<QuestionBank>
+    <Question id='1'>
+        <QuestionContent>
+            Overall, artificial intelligence will have a mostly positive impact on how people work and live in the next 10 years.
+        </QuestionContent>
+    </Question>
+
+    <Question id='2'>
+        <QuestionContent>
+            Overall, artificial intelligence has had a mostly negative impact on my life so far.
+        </QuestionContent>
+    </Question>
+
+    <Question id='3'>
+        <QuestionContent>
+            The federal government should do more to regulate companies that use artificial intelligence to protect consumers.
+        </QuestionContent>
+    </Question>
+
+    <Question id='4'>
+        <QuestionContent>
+            The federal government should provide more funding for university research on artificial intelligence.
+        </QuestionContent>
+    </Question>
+
+    <Question id='5'>
+        <QuestionContent>
+            The federal government should provide tax breaks to business researching artificial intelligence.
+        </QuestionContent>
+    </Question>
+
+    <Question id='6'>
+        <QuestionContent>
+            Thinking about the number of jobs in the U.S., an increase in the use of artificial intelligence will eliminate more jobs than it creates.
+        </QuestionContent>
+    </Question>
+
+    <Question id='7'>
+        <QuestionContent>
+            I am worried about losing my job to new technology.
+        </QuestionContent>
+    </Question>
+
+    <Question id='8'>
+        <QuestionContent>
+            If artificial intelligence caused me to lose my job today, I am confident that I would be able to obtain the training or education I need to find another job at a similar salary.
+        </QuestionContent>
+    </Question>
+
+</QuestionBank>
