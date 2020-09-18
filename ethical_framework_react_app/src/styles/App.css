@@ -1,0 +1,10 @@
+.App {
+  text-align: center;
+}
+
+.Divider {
+  position: fixed;
+  height: 2px;
+  width: 100%;
+  background-color: black;
+}
