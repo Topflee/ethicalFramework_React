@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../styles/App.css';
 import Header from './Header.js';
 import Footer from './Footer.js';
+import Body from './Body.js';
 
 
 class App extends Component {
@@ -10,7 +11,7 @@ class App extends Component {
         return (
             <React.Fragment>
                 <Header />
-                <div></div>
+                <Body />
                 <Footer />
             </React.Fragment>
         )
